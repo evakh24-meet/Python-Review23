@@ -13,3 +13,12 @@ def dislikes(youtube_video):
 def add_comment(video, username, comment_text):
 	video['comments'][username] = comment_text
 
+video = create_youtube_video('Goats are amazing', 'Find out why goats are superior to humans')
+like(video)
+dislikes(video)
+add_comment(video, 'eva','I agree, goats are superior to humans')
+
+for i in range (495):
+	like(video)
+
+print(video)
